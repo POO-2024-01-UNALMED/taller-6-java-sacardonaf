@@ -41,7 +41,7 @@ public class Pais {
 				}}}
 	}			
 	
-	public Pais paisMasVendedor() {
+	public static Pais paisMasVendedor() {
 		return paisMasVendedor;
 	}
 	

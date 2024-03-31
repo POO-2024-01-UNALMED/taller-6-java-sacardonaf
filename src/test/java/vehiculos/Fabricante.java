@@ -43,7 +43,7 @@ public class Fabricante {
 				}}}
 	}
 	
-	public Fabricante fabricaMayorVentas() {
+	public static Fabricante fabricaMayorVentas() {
 		return fabricaMayorVentas;
 	}
 	
