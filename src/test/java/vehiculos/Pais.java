@@ -1,16 +1,16 @@
 package vehiculos;
 import java.util.ArrayList;
 
-public class País {
+public class Pais {
 	private String nombre;
-	private static ArrayList<País> paises;
-	private static País paisMasVendedor;
+	private static ArrayList<Pais> paises;
+	private static Pais paisMasVendedor;
 	
-	public País(String nombre) {
+	public Pais(String nombre) {
 		this.nombre=nombre;
 	}
 	
-	public static void listapais(País pais) {
+	public static void listapais(Pais pais) {
 		paises.add(pais);
 		if(paises.size()==0) {
 			paisMasVendedor=null;
@@ -36,7 +36,7 @@ public class País {
 				}}}
 	}			
 	
-	public País paisMasVendedor() {
+	public Pais paisMasVendedor() {
 		return paisMasVendedor;
 	}
 	

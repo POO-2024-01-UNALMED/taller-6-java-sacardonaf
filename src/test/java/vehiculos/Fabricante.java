@@ -3,11 +3,11 @@ import java.util.ArrayList;
 
 public class Fabricante {
 	private String nombre;
-	private País pais;
+	private Pais pais;
 	private static ArrayList<Fabricante> fabricantes;
 	private static Fabricante fabricaMayorVentas;
 	
-	public Fabricante(String nombre,País pais) {
+	public Fabricante(String nombre,Pais pais) {
 		this.nombre=nombre;
 		this.pais=pais;
 		
@@ -48,10 +48,10 @@ public class Fabricante {
 	public void setNombre(String nombre) {
 		this.nombre=nombre;
 	}
-	public País getPais() {
+	public Pais getPais() {
 		return this.pais;
 	}
-	public void setPais(País pais) {
+	public void setPais(Pais pais) {
 		this.pais=pais;
 	}
 }

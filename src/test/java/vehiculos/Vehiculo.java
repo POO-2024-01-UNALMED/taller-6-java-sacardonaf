@@ -1,6 +1,6 @@
 package vehiculos;
 
-public class Vehículo {
+public class Vehiculo {
 	protected String placa;
 	protected int puertas;
 	protected int velocidadMaxima;
@@ -11,7 +11,7 @@ public class Vehículo {
 	protected Fabricante fabricante;
 	protected static int CantidadVehiculos;
 	
-	public Vehículo(String placa,int puertas,int velocidadMaxima,String nombre,float precio,float peso,String traccion,Fabricante fabricante) {
+	public Vehiculo(String placa,int puertas,int velocidadMaxima,String nombre,float precio,float peso,String traccion,Fabricante fabricante) {
 		this.placa=placa;
 		this.puertas=puertas;
 		this.velocidadMaxima=velocidadMaxima;
@@ -21,12 +21,12 @@ public class Vehículo {
 		this.traccion=traccion;
 		this.fabricante=fabricante;
 		CantidadVehiculos++;
-		País.listapais(fabricante.getPais());
+		Pais.listapais(fabricante.getPais());
 		Fabricante.listafabricantes(fabricante);
 	}
 	
 	public String vehiculosPorTipo() {
-		return("Automoviles: "+ Automóvil.getCantidadAutomoviles() +"\n"
+		return("Automoviles: "+ Automovil.getCantidadAutomoviles() +"\n"
 				+ "Camionetas: "+ Camioneta.getCantidadCamionetas()+"\n"
 				+ "Camiones: "+ Camion.getCantidadCamiones());
 	}
