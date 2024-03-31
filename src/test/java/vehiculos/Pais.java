@@ -11,8 +11,13 @@ public class Pais {
 	}
 	
 	public static void listapais(Pais pais) {
-		paises.add(pais);
-		if(paises.size()==0) {
+		if (paises==null) {
+			paises=new ArrayList<Pais>();
+			paises.add(pais);
+		}
+		else {
+		paises.add(pais);}
+		if(paises==null) {
 			paisMasVendedor=null;
 		}
 		else {

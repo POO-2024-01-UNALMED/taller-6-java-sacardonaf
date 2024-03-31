@@ -13,8 +13,13 @@ public class Fabricante {
 		
 	}
 	public static void listafabricantes(Fabricante fabrica) {
-		fabricantes.add(fabrica);
-		if(fabricantes.size()==0) {
+		if (fabricantes==null) {
+			fabricantes=new ArrayList<Fabricante>();
+			fabricantes.add(fabrica);
+		}
+		else {
+		fabricantes.add(fabrica);}
+		if(fabricantes==null) {
 			fabricaMayorVentas=null;
 		}
 		else {
